@@ -6,8 +6,9 @@ def find_even_values(src)
   #
   # Output all even values in each nested array
   count = 0 
-  while count < src.length do
-    while incount < src.length do 
+  while count < src.count do
+    incount = 0 
+    while incount < src[count].count do 
       if src[count][incount]% 2 == 0 
         puts src[count][incount]
       end
